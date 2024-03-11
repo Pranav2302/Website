@@ -3,40 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherApp</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Pranav Kamble</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body background="https://source.unsplash.com/1600x900?nature" class="background">
-    <!-- <img src="" class="background"/> -->
-    <main>
-        <div class="main-card">
-            
-            <div class="search">
-                <input type="text" class="search-bar" placeholder="Search City">
-                <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
-            <div class="weather">
-                <h1 class="city">Search Weather</h1>
-                <div hidden id="hide">
-                <div class="desc_img">
-                <h1 class="temp">31°C</h1>
-                <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="icon" class="icon"/>
-                </div>
-                <div class="desc" id="info">Cloudy</div>
-                <div class="humidity"id="info">Humidity: 60%</div>
-                <div class="wind"id="info">Wind speed: 6.2 km/h</div>
-                <div class="time"id="info">Date And Time:</div>
-            </div>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Pranav Kamble </h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="hero">
+        <div class="container">
+            <h2>Hello,I'm Pranav</h2>
+            <p>Passionate Frontend React developer now diving in Backend development and Software Programming </p>
+            <div class="contact-icons">
+                <a href="https://github.com/Pranav2302" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/pranav-kamble-a92a99204/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn"></a>
             </div>
         </div>
-    </main>
-    <script src="app.js"></script>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Mini Practice Projects</h2>
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>Check Weather Of Your City</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of Project 2</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-icons">
+                <a href="https://github.com/yourusername" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
