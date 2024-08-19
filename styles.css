@@ -12,6 +12,7 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
     background-color: #0A0A0A;
     padding: 15px 0;
@@ -22,7 +23,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: none; /* Remove default border */
 }
+
+.navbar::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 3%; 
+    right: 20%; 
+    height: 1.5px;
+    background-color: #2c2828; /* Color of the line */
+}
+
 
 .nav-links {
     list-style-type: none;
@@ -34,18 +48,25 @@ body {
     color: #E0E0E0;
     padding: 8px 16px;
     text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #0A0A0A;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    background-color: #1E90FF;
-    color: #0A0A0A;
+    background-color: #393a3b;
+    border-color: #0A7AC3;
+    color:white
 } 
-
-/*  hero ses*/
+/* Hero section styles */
 .hero {
-    background-color: #121212;
-    padding: 200px 20px;
-    text-align: left;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #0A0A0A;
+    padding: 0; 
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .hero h1 {
@@ -60,11 +81,29 @@ body {
     margin: 10px 0 20px;
 }
 
+/* Container styles */
 .hero .container {
-    max-width: 800px;
-    margin-left: 0;
+    flex: 1; /* Take up half of the space */
+    max-width: 800px; 
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
+/* Hero image styles */
+.hero .hero-image {
+    flex: 1; /* Take up the other half of the space */
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Style for the image */
+.hero .hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button styles */
 .hero-buttons {
     margin-top: 20px;
 }
@@ -73,20 +112,20 @@ body {
     display: inline-block;
     margin-right: 10px;
     padding: 10px 20px;
-    background-color: #1E90FF;
-    color: #FFFFFF;
+    background-color: #393a3b;
+    color: #50b985;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border: 1px solid #0A0A0A;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .hero-btn:hover {
-    background-color: #0A7AC3;
+    background-color: #0A0A0A;
+    border-color: #0A7AC3;
 }
 
 
-
-/* About Section */
 /* About Section */
 .about-section {
     padding: 100px 20px;
@@ -114,7 +153,7 @@ body {
 }
 
 
-/* Project Section */
+/* Work Section */
 .project-section {
     padding: 100px 20px;
     background-color: #0A0A0A;
