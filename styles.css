@@ -39,39 +39,83 @@ body {
 .nav-links li a:hover {
     background-color: #1E90FF;
     color: #0A0A0A;
-}
+} 
 
-/* Hero Section */
+/*  hero ses*/
 .hero {
     background-color: #121212;
     padding: 200px 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .hero h1 {
     font-size: 3rem;
     color: #FFFFFF;
+    margin: 0;
 }
 
 .hero p {
     font-size: 1.25rem;
     color: #BBBBBB;
+    margin: 10px 0 20px;
 }
 
+.hero .container {
+    max-width: 800px;
+    margin-left: 0;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #0A7AC3;
+}
+
+
+
+/* About Section */
 /* About Section */
 .about-section {
     padding: 100px 20px;
     background-color: #1A1A1A;
     color: #E0E0E0;
-    text-align: center;
 }
 
-.about-section h2 {
-    font-size: 2.5rem;
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-photo img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 
 /* Work Section */
-.work-section {
+.project-section {
     padding: 100px 20px;
     background-color: #0A0A0A;
     text-align: center;
@@ -122,4 +166,15 @@ footer {
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
+}
+.contact-icons img,
+.footer-icons img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin: 0 10px; /* Space between icons */
+}
+
+.contact-icons a,
+.footer-icons a {
+    display: inline-block;
 }
