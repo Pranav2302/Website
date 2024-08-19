@@ -3,78 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranav Kamble</title>
-    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+    <meta name="description" content="Pranav Kamble - Portfolio">
+    <title>Pranav Kamble - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <h1 class="logo">Pranav Kamble </h1>
+            <a href="#" class="logo">Pranav Kamble</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="about" class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <h2>Hello,I'm Pranav</h2>
-            <p>Passionate Frontend React developer now diving in Backend development and Software Programming </p>
-            <div class="contact-icons">
-                <a href="https://github.com/Pranav2302" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/pranav-kamble-a92a99204/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn"></a>
-            </div>
+            <h1>Hi, I'm Pranav Kamble</h1>
+            <p>A passionate developer focused on building engaging digital experiences.</p>
         </div>
     </section>
 
-    <section id="projects" class="projects-section">
+    <!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
-            <h2>Mini Practice Projects</h2>
-           
+            <h2>About Me</h2>
+            <p>I am a software enthusiast with a passion for creating intuitive and dynamic user interfaces. My goal is to combine creativity and technology to develop user-friendly applications that solve real-world problems.</p>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <h2>Work</h2>
             <div class="project-card">
-                <h3>SocialMedia Website</h3>
-                <p>Project</p>
-                <a href="https://blog-app-beige-phi.vercel.app/" class="btn">View Project</a>
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Description of the project goes here.</p>
             </div>
-             <div class="project-card">
-                <h3>Weather App</h3>
-                <p>Check Weather Of Your City</p>
-                <a href="https://pranav2302.github.io/Weather-app/" class="btn" target="_blank">View Project</a>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Description of the project goes here.</p>
             </div>
-            <!-- Add more project cards as needed -->
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Description of the project goes here.</p>
+            </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out on any of the platforms below.</p>
             <div class="contact-icons">
-                <a href="https://github.com/Pranav2302" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/pranav-kamble-a92a99204/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/pranavkamble" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://github.com/pranavkamble" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+                <a href="mailto:pranav@example.com"><img src="email-icon.png" alt="Email"></a>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 Pranav Kamble. All rights reserved.</p>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top">↑</button>
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
