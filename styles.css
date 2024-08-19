@@ -1,135 +1,125 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #0A0A0A;
+    color: #E0E0E0;
+    line-height: 1.6;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Navbar styles */
+/* Navbar */
 .navbar {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #0A0A0A;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 999;
-}
-
-.navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    margin: 0;
-    color: #fff;
-}
-
 .nav-links {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    display: inline;
-    margin-right: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links li a {
-    color: #fff;
+    color: #E0E0E0;
+    padding: 8px 16px;
     text-decoration: none;
 }
 
-/* Section styles */
+.nav-links li a:hover {
+    background-color: #1E90FF;
+    color: #0A0A0A;
+}
+
+/* Hero Section */
 .hero {
-    background-color: #f2f2f2;
-    padding: 100px 0;
+    background-color: #121212;
+    padding: 200px 20px;
     text-align: center;
 }
 
-.hero h2 {
-    margin-bottom: 30px;
+.hero h1 {
+    font-size: 3rem;
+    color: #FFFFFF;
 }
 
-.projects-section,
-.contact-section {
-    padding: 50px 0;
+.hero p {
+    font-size: 1.25rem;
+    color: #BBBBBB;
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 20px;
+    background-color: #1A1A1A;
+    color: #E0E0E0;
     text-align: center;
 }
 
-.projects-section h2,
-.contact-section h2 {
-    margin-bottom: 30px;
+.about-section h2 {
+    font-size: 2.5rem;
 }
 
-/* Project card styles */
+/* Work Section */
+.work-section {
+    padding: 100px 20px;
+    background-color: #0A0A0A;
+    text-align: center;
+}
+
 .project-card {
-    background-color: #fff;
+    background-color: #2A2A2A;
     padding: 30px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.project-card img {
+    border-radius: 10px;
 }
 
-.project-card h3 {
-    margin-top: 0;
-}
-
-.project-card p {
-    color: #555;
-}
-
-.project-card .btn {
-    display: inline-block;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.project-card .btn:hover {
-    background-color: #2980b9;
-}
-
-/* Footer styles */
-footer {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 20px 0;
+/* Contact Section */
+.contact-section {
+    padding: 100px 20px;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
     text-align: center;
 }
 
-/* Contact icons styles */
-.contact-icons {
-    margin-top: 30px;
+.contact-icons a img {
+    width: 50px;
+    height: 50px;
 }
 
-.contact-icons a {
-    margin-right: 20px;
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    text-align: center;
 }
 
-.contact-icons img {
-    width: 40px;
-    height: 40px;
+/* Scroll-to-Top Button */
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1E90FF;
+    color: #0A0A0A;
     border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.contact-icons img:hover {
-    transform: scale(1.1);
+    font-size: 20px;
+    cursor: pointer;
 }
