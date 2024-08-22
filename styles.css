@@ -65,6 +65,7 @@ body {
     padding: 0; 
     height: 100vh; 
     overflow: hidden; 
+    flex-wrap: wrap; 
 }
 
 .hero h1 {
@@ -209,59 +210,34 @@ footer {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
-    .navbar .nav-links {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 0;
-    }
-
+@media (max-width: 768px) {
     .hero {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column; /* Stack content vertically */
         text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero .container, .about-text, .hero .hero-image {
-        width: 100%;
         padding: 20px;
     }
 
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-photo img, .project-card {
+    .hero .container, 
+    .hero .hero-image {
+        flex: unset; /* Remove flex properties to make elements take full width */
         width: 100%;
-        max-width: 100%;
-        margin: 0 auto 20px;
     }
 
     .hero-buttons {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 10px; /* Space between buttons */
+        width: 100%; /* Make buttons full-width */
     }
 
     .hero-btn {
-        margin-bottom: 15px;
-        width: 80%;
+        width: 100%; /* Make buttons full-width */
+        margin: 0; /* Remove margin */
+        padding: 10px 0; /* Adjust padding */
     }
 
-    .project-card {
+    .hero .hero-image img {
         width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .project-section {
-        padding: 50px 20px;
+        max-width: 300px;
     }
 }
