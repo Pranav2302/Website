@@ -12,7 +12,6 @@ body {
 }
 
 /* Navbar */
-/* Navbar */
 .navbar {
     background-color: #0A0A0A;
     padding: 15px 0;
@@ -23,7 +22,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: none; /* Remove default border */
 }
 
 .navbar::after {
@@ -36,7 +34,6 @@ body {
     height: 1.5px;
     background-color: #2c2828; /* Color of the line */
 }
-
 
 .nav-links {
     list-style-type: none;
@@ -56,8 +53,9 @@ body {
 .nav-links li a:hover {
     background-color: #393a3b;
     border-color: #0A7AC3;
-    color:white
+    color: white;
 } 
+
 /* Hero section styles */
 .hero {
     display: flex; 
@@ -81,29 +79,25 @@ body {
     margin: 10px 0 20px;
 }
 
-/* Container styles */
 .hero .container {
-    flex: 1; /* Take up half of the space */
+    flex: 1;
     max-width: 800px; 
     padding: 20px; 
     box-sizing: border-box; 
 }
 
-/* Hero image styles */
 .hero .hero-image {
-    flex: 1; /* Take up the other half of the space */
+    flex: 1;
     display: flex; 
     justify-content: center;
     align-items: center; 
 }
 
-/* Style for the image */
 .hero .hero-image img {
     max-width: 100%;
     height: auto;
 }
 
-/* Button styles */
 .hero-buttons {
     margin-top: 20px;
 }
@@ -125,7 +119,6 @@ body {
     border-color: #0A7AC3;
 }
 
-
 /* About Section */
 .about-section {
     padding: 100px 20px;
@@ -137,7 +130,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 .about-text {
@@ -152,8 +145,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-
-/* Work Section */
+/* Project Section */
 .project-section {
     padding: 100px 20px;
     background-color: #0A0A0A;
@@ -186,7 +178,6 @@ body {
     height: 50px;
 }
 
-/* Footer */
 footer {
     padding: 20px;
     background-color: #0A0A0A;
@@ -206,14 +197,71 @@ footer {
     font-size: 20px;
     cursor: pointer;
 }
-.contact-icons img,
-.footer-icons img {
-    width: 24px; /* Adjust size as needed */
-    height: 24px; /* Adjust size as needed */
-    margin: 0 10px; /* Space between icons */
+
+.contact-icons img, .footer-icons img {
+    width: 24px; 
+    height: 24px; 
+    margin: 0 10px; 
 }
 
-.contact-icons a,
-.footer-icons a {
+.contact-icons a, .footer-icons a {
     display: inline-block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .container, .about-text, .hero .hero-image {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo img, .project-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-btn {
+        margin-bottom: 15px;
+        width: 80%;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .project-section {
+        padding: 50px 20px;
+    }
 }
