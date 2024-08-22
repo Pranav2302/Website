@@ -56,16 +56,17 @@ body {
     color: white;
 } 
 
-/* Hero section styles */
+/* Add margin to prevent overlap with navbar */
 .hero {
+    padding-top: 80px; /* Adjust this value based on your navbar height */
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
     background-color: #0A0A0A;
-    padding: 0; 
+    padding-left: 10%; /* Add padding to left */
+    padding-right: 10%; /* Add padding to right */
     height: 100vh; 
     overflow: hidden; 
-    flex-wrap: wrap; 
 }
 
 .hero h1 {
@@ -80,27 +81,33 @@ body {
     margin: 10px 0 20px;
 }
 
+/* Container styles */
 .hero .container {
-    flex: 1;
+    flex: 1; 
     max-width: 800px; 
-    padding: 20px; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
+/* Hero image styles */
 .hero .hero-image {
-    flex: 1;
+    flex: 1; 
     display: flex; 
     justify-content: center;
     align-items: center; 
 }
 
+/* Style for the image */
 .hero .hero-image img {
     max-width: 100%;
     height: auto;
 }
 
+/* Button styles */
 .hero-buttons {
     margin-top: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10px; /* Add some spacing between buttons */
 }
 
 .hero-btn {
@@ -122,7 +129,7 @@ body {
 
 /* About Section */
 .about-section {
-    padding: 100px 20px;
+    padding: 100px 10%; /* Adjust padding to ensure separation */
     background-color: #1A1A1A;
     color: #E0E0E0;
 }
@@ -131,7 +138,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .about-text {
@@ -145,7 +152,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-
 /* Project Section */
 .project-section {
     padding: 100px 20px;
@@ -212,32 +218,26 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
-        flex-direction: column; /* Stack content vertically */
-        text-align: center;
-        padding: 20px;
-    }
-
-    .hero .container, 
-    .hero .hero-image {
-        flex: unset; /* Remove flex properties to make elements take full width */
-        width: 100%;
-    }
-
-    .hero-buttons {
-        display: flex;
         flex-direction: column;
-        gap: 10px; /* Space between buttons */
-        width: 100%; /* Make buttons full-width */
+        text-align: center;
+        padding-top: 100px; /* Adjust padding to ensure the hero section is visible */
     }
 
-    .hero-btn {
-        width: 100%; /* Make buttons full-width */
-        margin: 0; /* Remove margin */
-        padding: 10px 0; /* Adjust padding */
+    .hero .container, .hero .hero-image {
+        flex: unset; /* Disable flex settings */
+        max-width: 100%; /* Full width on small screens */
     }
 
     .hero .hero-image img {
-        width: 100%;
-        max-width: 300px;
+        margin-top: 20px; /* Add space between text and image */
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-right: 0;
     }
 }
