@@ -56,7 +56,7 @@ body {
     color: white;
 } 
 
-/* Add margin to prevent overlap with navbar */
+/* Hero Section */
 .hero {
     padding-top: 80px; /* Adjust this value based on your navbar height */
     display: flex; 
@@ -107,7 +107,7 @@ body {
     margin-top: 20px;
     display: flex; 
     flex-wrap: wrap;
-    gap: 10px; /* Add some spacing between buttons */
+    gap: 10px; /* Add spacing between buttons */
 }
 
 .hero-btn {
@@ -129,7 +129,7 @@ body {
 
 /* About Section */
 .about-section {
-    padding: 100px 10%; /* Adjust padding to ensure separation */
+    padding: 100px 10%; /* Adjust padding for separation */
     background-color: #1A1A1A;
     color: #E0E0E0;
 }
@@ -138,7 +138,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .about-text {
@@ -152,7 +152,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-/* Project Section */
+
 /* Project Section */
 .project-section {
     padding: 100px 20px;
@@ -231,7 +231,7 @@ footer {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding-top: 100px; /* Adjust padding to ensure the hero section is visible */
+        padding-top: 100px; /* Ensure visibility of the hero section */
     }
 
     .hero .container, .hero .hero-image {
@@ -251,7 +251,8 @@ footer {
     .about-text {
         margin-right: 0;
     }
-    /* card */
+
+    /* Project cards */
     .project-section .container {
         flex-direction: column; /* Stack cards vertically on smaller screens */
         align-items: center; /* Center cards */
@@ -259,7 +260,6 @@ footer {
 
     .project-card {
         width: 80%; /* Wider cards on smaller screens */
-        max-width: none; /* Remove max-width to allow flexibility */
+        max-width: none; /* Allow flexibility */
     }
-}
 }
