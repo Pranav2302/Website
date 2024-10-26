@@ -153,10 +153,17 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 /* Project Section */
+/* Project Section */
 .project-section {
     padding: 100px 20px;
     background-color: #0A0A0A;
     text-align: center;
+}
+
+.project-section .container {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-around; /* Space between items */
 }
 
 .project-card {
@@ -164,12 +171,16 @@ body {
     padding: 30px;
     margin: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 300px; /* Fixed width for each card */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    flex: 1 1 30%; /* Allow cards to grow/shrink and set a base width */
+    max-width: 300px; /* Prevent exceeding the card width */
 }
 
 .project-card img {
     border-radius: 10px;
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Contact Section */
@@ -240,4 +251,15 @@ footer {
     .about-text {
         margin-right: 0;
     }
+    /* card */
+    .project-section .container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards */
+    }
+
+    .project-card {
+        width: 80%; /* Wider cards on smaller screens */
+        max-width: none; /* Remove max-width to allow flexibility */
+    }
+}
 }
