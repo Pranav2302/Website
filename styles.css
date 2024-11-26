@@ -114,17 +114,28 @@ body {
     display: inline-block;
     margin-right: 10px;
     padding: 10px 20px;
-    background-color: #393a3b;
-    color: #50b985;
+    background-color: #ffffff; /* White background initially */
+    color: #4b5563; /* Medium gray text color */
     text-decoration: none;
     border-radius: 5px;
-    border: 1px solid #0A0A0A;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #d1d5db; /* Light gray border */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-btn:hover {
-    background-color: #0A0A0A;
-    border-color: #0A7AC3;
+    background-color: #333333; /* Dark gray background on hover */
+    border-color: transparent; /* Transparent border on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+/* Icon styles inside the button (if applicable) */
+.hero-btn svg {
+    fill: #4b5563; /* Medium gray color for the icon initially */
+    transition: fill 0.3s ease;
+}
+
+.hero-btn:hover svg {
+    fill: #ffffff; /* White icon color on hover */
 }
 
 /* About Section */
