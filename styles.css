@@ -111,15 +111,13 @@ body {
 }
 
 .hero-btn {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 10px 20px;
-    background-color: #ffffff; /* White background initially */
-    color: #4b5563; /* Medium gray text color */
+    background-color: #ffffff; /* White background */
+    color: #4b5563; /* Medium gray text */
     text-decoration: none;
     border-radius: 5px;
     border: 1px solid #d1d5db; /* Light gray border */
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .hero-btn:hover {
@@ -137,7 +135,22 @@ body {
 .hero-btn:hover svg {
     fill: #ffffff; /* White icon color on hover */
 }
+/* GitHub button hover styles */
+.hero-btn.github-btn:hover {
+    background-color: #333333; 
+    color: #ffffff;
+}
 
+/* LinkedIn button hover styles */
+.hero-btn.linkedin-btn:hover {
+    background-color: #0077B5; 
+    color: #ffffff;
+}
+/* Email button hover styles */
+.hero-btn.email-btn:hover {
+    background-color: #D44638;
+    color: #ffffff; 
+}
 /* About Section */
 .about-section {
     padding: 100px 10%; /* Adjust padding for separation */
