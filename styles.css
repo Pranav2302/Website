@@ -32,7 +32,7 @@ body {
     left: 3%; 
     right: 20%; 
     height: 1.5px;
-    background-color: #2c2828; /* Color of the line */
+    background-color: #2c2828;
 }
 
 .nav-links {
@@ -58,13 +58,13 @@ body {
 
 /* Hero Section */
 .hero {
-    padding-top: 80px; /* Adjust this value based on your navbar height */
+    padding-top: 80px;
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
     background-color: #0A0A0A;
-    padding-left: 10%; /* Add padding to left */
-    padding-right: 10%; /* Add padding to right */
+    padding-left: 10%; 
+    padding-right: 10%; 
     height: 100vh; 
     overflow: hidden; 
 }
@@ -81,14 +81,12 @@ body {
     margin: 10px 0 20px;
 }
 
-/* Container styles */
 .hero .container {
     flex: 1; 
     max-width: 800px; 
     box-sizing: border-box;
 }
 
-/* Hero image styles */
 .hero .hero-image {
     flex: 1; 
     display: flex; 
@@ -96,85 +94,9 @@ body {
     align-items: center; 
 }
 
-/* Style for the image */
 .hero .hero-image img {
     max-width: 100%;
     height: auto;
-}
-
-/* Button styles */
-.hero-buttons {
-    margin-top: 20px;
-    display: flex; 
-    flex-wrap: wrap;
-    gap: 10px; /* Add spacing between buttons */
-}
-
-.hero-btn {
-    background-color: #ffffff; /* White background */
-    color: #4b5563; /* Medium gray text */
-    text-decoration: none;
-    border-radius: 5px;
-    border: 1px solid #d1d5db; /* Light gray border */
-    padding: 10px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-.hero-btn:hover {
-    background-color: #333333; /* Dark gray background on hover */
-    border-color: transparent; /* Transparent border on hover */
-    color: #ffffff; /* White text color on hover */
-}
-
-/* Icon styles inside the button (if applicable) */
-.hero-btn svg {
-    fill: #4b5563; /* Medium gray color for the icon initially */
-    transition: fill 0.3s ease;
-}
-
-.hero-btn:hover svg {
-    fill: #ffffff; /* White icon color on hover */
-}
-/* GitHub button hover styles */
-.hero-btn.github-btn:hover {
-    background-color: #333333; 
-    color: #ffffff;
-}
-
-/* LinkedIn button hover styles */
-.hero-btn.linkedin-btn:hover {
-    background-color: #0077B5; 
-    color: #ffffff;
-}
-/* Email button hover styles */
-.hero-btn.email-btn:hover {
-    background-color: #D44638;
-    color: #ffffff; 
-}
-/* About Section */
-.about-section {
-    padding: 100px 10%; /* Adjust padding for separation */
-    background-color: #1A1A1A;
-    color: #E0E0E0;
-}
-
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-.about-text {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.about-photo img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Project Section */
@@ -185,105 +107,74 @@ body {
 }
 
 .project-section .container {
-    display: flex; /* Use flexbox */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    justify-content: space-around; /* Space between items */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .project-card {
     background-color: #2A2A2A;
     padding: 30px;
-    margin: 20px;
     border-radius: 10px;
-    width: 300px; /* Fixed width for each card */
+    width: 300px;
+    max-width: 320px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    flex: 1 1 30%; /* Allow cards to grow/shrink and set a base width */
-    max-width: 300px; /* Prevent exceeding the card width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
 }
 
 .project-card img {
     border-radius: 10px;
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-/* Contact Section */
-.contact-section {
-    padding: 100px 20px;
-    background-color: #1A1A1A;
-    color: #FFFFFF;
+.project-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #E0E0E0;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #BBBBBB;
     text-align: center;
+    flex-grow: 1;
 }
 
-.contact-icons a img {
-    width: 50px;
-    height: 50px;
+.project-card .project-btn {
+    margin-top: 15px;
+    background-color: #0A7AC3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-footer {
-    padding: 20px;
-    background-color: #0A0A0A;
-    color: #FFFFFF;
-    text-align: center;
+.project-card .project-btn:hover {
+    background-color: #085A8B;
 }
 
-/* Scroll-to-Top Button */
-.scroll-to-top {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #1E90FF;
-    color: #0A0A0A;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.contact-icons img, .footer-icons img {
-    width: 24px; 
-    height: 24px; 
-    margin: 0 10px; 
-}
-
-.contact-icons a, .footer-icons a {
-    display: inline-block;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 100px; /* Ensure visibility of the hero section */
-    }
-
-    .hero .container, .hero .hero-image {
-        flex: unset; /* Disable flex settings */
-        max-width: 100%; /* Full width on small screens */
-    }
-
-    .hero .hero-image img {
-        margin-top: 20px; /* Add space between text and image */
-    }
-
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-text {
-        margin-right: 0;
-    }
-
-    /* Project cards */
     .project-section .container {
-        flex-direction: column; /* Stack cards vertically on smaller screens */
-        align-items: center; /* Center cards */
+        flex-direction: column;
+        align-items: center;
     }
 
     .project-card {
-        width: 80%; /* Wider cards on smaller screens */
-        max-width: none; /* Allow flexibility */
+        width: 90%;
+        max-width: 400px;
     }
 }
