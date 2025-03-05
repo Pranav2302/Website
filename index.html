@@ -6,70 +6,71 @@
     <meta name="description" content="Pranav Kamble - Aspiring Software Developer. Explore my portfolio showcasing projects, skills, and contact information.">
     <meta property="og:title" content="Pranav Kamble | Aspiring Software Developer">
     <meta property="og:description" content="Explore my portfolio showcasing projects, skills, and more.">
-    <meta property="og:image" content="https://pranavweb.tech//profile_photo.jpeg">
+    <meta property="og:image" content="https://pranavweb.tech/profile_photo.jpeg">
     <meta property="og:url" content="https://pranavweb.tech/">
-    
 
-    <title>Pranav Kamble | Aspiring Software Developer </title>
+    <title>Pranav Kamble | Aspiring Software Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.jpeg" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="profile_photo.jpeg" as="image">
+    <link rel="preload" href="styles.css" as="style">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#home" aria-current="page">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Hey there!, I'm Pranav Kamble</h1>
+                <p>🚀 I am an aspiring software developer currently deepening my skills in Data Structures, Algorithms, and Backend Technologies.</p>
+                <p>⚡ Hands-on experience in React.js, Tailwind CSS, MongoDB, and AWS</p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/Pranav2302" target="_blank" class="hero-btn github-btn" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/pranav-kamble-a92a99204" target="_blank" class="hero-btn linkedin-btn" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:pvkamble02@gmail.com" class="hero-btn email-btn" aria-label="Send Email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Table_image.png" alt="Pranav Kamble working at a table" loading="lazy">
+            </div>
+        </section>
 
-<section id="home" class="hero">
-    <div class="container">
-        <h1>Hey there!, I'm Pranav Kamble</h1>
-        <p>🚀 I am an aspiring software developer and I’m currently deepening
-            my skills in Data Structures Algorithm and Backend Technologies.</p>
-        <p>⚡  Hand's on experience in Reactjs,Tailwind Css,MongoDb,AWS</p>
-        <div class="hero-buttons">
-            <a href="https://github.com/Pranav2302" target="_blank" class="hero-btn github-btn">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/pranav-kamble-a92a99204" target="_blank" class="hero-btn linkedin-btn">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="mailto:pvkamble02@gmail.com" class="hero-btn email-btn">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-        </div>
-    </div>
-    <div class="hero-image">
-            <img src="Table_image.png" alt="table image ">
-        </div>
-</section>
-   <!-- About Section -->
-<section id="about" class="about-section">
-    <div class="container about-container">
-        <div class="about-text">
-            <h2>⚡ About Me</h2>
-            <p>I am an aspiring software developer and I’m currently deepening
-            my skills in Data Structures Algorithm and Backend Technologies. I’m looking for an entry-level role in software
-            Development where I can bring my skills and enthusiasm for technology to team. My goal is to contribute to
-            meaningful projects, grow professionally, to ensure the quality of software products and contribute to the success of
-            a growth-oriented company</p>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>⚡ About Me</h2>
+                    <p>I am an aspiring software developer currently deepening my skills in Data Structures, Algorithms, and Backend Technologies. I'm seeking an entry-level role in software development where I can bring my skills and enthusiasm for technology to a team. My goal is to contribute to meaningful projects, grow professionally, and ensure the quality of software products while contributing to the success of a growth-oriented company.</p>
 
-            <!-- Technology Icons -->
-            <p align="left">
-                <a href="https://appwrite.io" target="_blank" rel="noreferrer">
+                    <!-- Technology Icons -->
+                    <div class="tech-skills">
+                        <h3>Technologies and Skills</h3>
+                        <div class="tech-icons">
+                           <a href="https://appwrite.io" target="_blank" rel="noreferrer">
                     <img src="https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg" alt="appwrite" width="40" height="40"/>
                 </a>
 
@@ -133,96 +134,116 @@
                 <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
                     <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/>
                 </a>
-            </p>
-        </div>
-        <div class="about-photo">
-            <img src="profile_photo.jpeg" alt="Pranav Kamble's profile photo">
-        </div>
-    </div>
-</section>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-photo">
+                    <img src="profile_photo.jpeg" alt="Pranav Kamble's profile photo" loading="lazy">
+                </div>
+            </div>
+        </section>
 
-    <!-- Project Section -->
-<section id="project" class="project-section">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <img src="mediaapp.png" alt="Social Media App - Pixels">
-            <a href="https://blog-app-beige-phi.vercel.app/"><h3>Social Media App - Pixels</h3></a>
-            <p>Developed a social media platform using the Appwrite Toolkit for the backend, along with Tailwind CSS, HTML, JavaScript, and React.js.</p>
+        <!-- Project Section -->
+        <section id="project" class="project-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <img src="mediaapp.png" alt="Social Media App - Pixels interface" loading="lazy">
+                        <a href="https://blog-app-beige-phi.vercel.app/"><h3>Social Media App - Pixels</h3></a>
+                        <p>Developed a social media platform using the Appwrite Toolkit for the backend, along with Tailwind CSS, HTML, JavaScript, and React.js.</p>
+                    </article>
+                    <article>
+                        <img src="weather.gif" alt="Weather background Photo">
+                        <a href="https://weather-real-time-ochre.vercel.app/"><h3>Real Time Weather</h3></a>
+                        <p>Real TIme Weather Dashboard using React, Tailwind CSS and Recharts that delivers real-time forecasting with 5-day predictions, dynamic weather-responsive UI backgrounds, and comprehensive meteorological metrics (humidity, UV index, wind data)</p>
+                    </article>
+                     <article>
+                        <img src="fastapi.png" alt="Fastapi-Dashboard">
+                        <a href="https://github.com/Pranav2302/Fastapi"><h3>Task Queuing and Limiting</h3></a>
+                        <p>System with FastAPI backend (async processing) and Implemented JWT authentication with role-based access,Utilized SQLAlchemy ORM and Pydantic Models,Alembic migrations for database versioning</p>
+                    </article>
+                     <article>
+                         <img src="Ratelimit.png" alt="Rate limit per 20 request">
+                        <a href="https://github.com/Pranav2302/Rate-Limit-and-Queuing"><h3>Task Queuing and Limiting</h3></a>
+                        <p>Implemented user task queuing with rate limiting, restricting users to 1 request per second and 20 requests per minute.</p>
+                    </article>
+                     <article>
+                        <img src="urlprojectphoto.png" alt="Shortening service App">
+                        <a href="https://bittly.vercel.app/"><h3>URL Shortening Service</h3></a>
+                        <p>Provides users with an easy way to create compact links that redirect to longer URLs, simplifying sharing and improving efficiency.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>If you'd like to get in touch, feel free to reach out on any of the platforms below.</p>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/pranav-kamble-a92a99204" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Pranav2302" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:pvkamble02@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pranav Kamble. All rights reserved.</p>
         </div>
-        <div class="project-card">
-            <img src="weather.gif" alt="Weather background Photo">
-            <a href="https://weather-real-time-ochre.vercel.app/"><h3>Real Time Weather</h3></a>
-            <p>Real TIme Weather Dashboard using React, Tailwind CSS and Recharts that delivers real-time forecasting with 5-day predictions, dynamic weather-responsive UI backgrounds, and comprehensive meteorological metrics (humidity, UV index, wind data)</p>
-        </div>
-        <div class="project-card">
-             <img src="fastapi.png" alt="Fastapi-Dashboard">
-            <a href="https://github.com/Pranav2302/Fastapi"><h3>Task Queuing and Limiting</h3></a>
-            <p>System with FastAPI backend (async processing) and Implemented JWT authentication with role-based ac-
-cess,Utilized SQLAlchemy ORM and Pydantic Models,Alembic migrations for database versioning</p>
-        </div>
-        <div class="project-card">
-             <img src="Ratelimit.png" alt="Rate limit per 20 request">
-            <a href="https://github.com/Pranav2302/Rate-Limit-and-Queuing"><h3>Task Queuing and Limiting</h3></a>
-            <p>Implemented user task queuing with rate limiting, restricting users to 1 request per second and 20 requests per minute.</p>
-        </div>
-        <div class="project-card">
-            <img src="urlprojectphoto.png" alt="Shortening service App">
-            <a href="https://bittly.vercel.app/"><h3>URL Shortening Service</h3></a>
-            <p>Provides users with an easy way to create compact links that redirect to longer URLs, simplifying sharing and improving efficiency.</p>
-        </div>
-    </div>
-</section>
-
-
-
-    <!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out on any of the platforms below.</p>
-        <div class="contact-icons">
-            <a href="https://www.linkedin.com/in/pranav-kamble-a92a99204" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Pranav2302" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://mail.google.com/">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
-    </div>
-</section>
-
-
-    
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Pranav Kamble. All rights reserved.</p>
-    </div>
-</footer>
-
-
+    </footer>
 
     <!-- Scroll to Top Button -->
-    <button class="scroll-to-top">↑</button>
+    <button class="scroll-to-top" aria-label="Scroll to Top">↑</button>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Pranav Kamble",
-  "jobTitle": "Aspiring Software Developer",
-  "url": "https://pranavweb.tech/",
-  "sameAs": [
-    "https://www.linkedin.com/in/pranav-kamble-a92a99204",
-    "https://github.com/Pranav2302"
-  ],
-  "image": "https://pranavweb.tech//profile_photo.jpeg"
-}
-</script>
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pranav Kamble",
+      "jobTitle": "Aspiring Software Developer",
+      "url": "https://pranavweb.tech/",
+      "sameAs": [
+        "https://www.linkedin.com/in/pranav-kamble-a92a99204",
+        "https://github.com/Pranav2302"
+      ],
+      "image": "https://pranavweb.tech/profile_photo.jpeg"
+    }
+    </script>
 
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll to top button functionality
+        const scrollToTopBtn = document.querySelector('.scroll-to-top');
+        window.addEventListener('scroll', () => {
+            scrollToTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
+
+
+
