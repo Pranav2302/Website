@@ -249,6 +249,28 @@ footer {
 .contact-icons a, .footer-icons a {
     display: inline-block;
 }
+.hero-btn.leetcode-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f89f1b;
+    color: #fff;
+    padding: 0.6em 1.2em;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn.leetcode-btn:hover {
+    background-color: #db7c00;
+}
+
+.hero-btn .leetcode-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
